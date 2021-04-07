@@ -1,52 +1,135 @@
 <!DOCTYPE html>
+<html>
+
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <title>s4n0i's page</title>
     <meta name="description" content="s4n0i's page">
     <meta name="author" content="s4n0i">
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-    <link rel='stylesheet' href='index.css'>
+    <link type="text/css" rel='stylesheet' href='/main.css'>
 </head>
-<body>
-    <h1>Hi friendo</h1>
-    <p>Here are some things I work(ed) on:</p>
-    <div id="card-container">
-        <div class="card">
+
+<body class="pl-4 pr-4">
+    <div class="container">
+        <div class="mt-4">
+            <a style="display: inline;" class="navbar-item" href="/index.html">
+                Home
+            </a>
+            <a style="display: inline;" class="navbar-item" href="/articles/index.html">
+                Writing
+            </a>
+            <a style="display: inline;" class="navbar-item" href="mailto:joners.mayer@gmail.com">
+                Contact
+            </a>
+        </div>
+    </div>
+    <section class="hero container is-small mb-6 mt-6 pb-6 pt6">
+        <div class="hero-body">
+            <p class="title is-primary">
+                Greetings
+            </p>
+            <p class="subtitle">
+                I'm glad you found your way to my internet place. Please make yourself at home.
+            </p>
+        </div>
+    </section>
+    <!-- Coming soon!
+    <div class="container mb-6">
+        <p class="title is-4">
+            Featured Articles
+        </p>
+        <div class="box article-box">
+            <p class="title is-5 is-spaced">
+                Executing binaries from an Android app post Android 8
+            </p>
+            <p class="subtitle is-6">
+                This is a writeup about an unpleasant clash with an Android security feature I had building my pet
+                project <a class="is-link" href="https://chessreps.app">Chess Reps</a> and will hopefully spare somebody
+                else the same trouble.
+            </p>
+            <span class="tag is-info">Android</span>
+            <span class="tag is-info">security</span>
+            <a href="articles/executing-binaries-android.html">
+                <span class="linkSpanner"></span>
+            </a>
+        </div>
+        <div class="box article-box">
+            <p class="title is-5 is-spaced">
+                One thing at a time! Concurrency and synchronization from the CPU to high-level programming languages
+            </p>
+            <p class="subtitle is-6">
+                The hardships of concurrent programming are a major cause of anxiety in software developers. In fact, I
+                am shifting in my seet right now. In the spirit of "facing your fears", this series of articles explores
+                concepts and techniques of concurrency and synchronization from the CPU to high-level language features.
+            </p>
+            <span class="tag is-info">deep dive</span>
+            <span class="tag is-info">low-level programming</span>
+            <span class="tag is-info">concurrency</span>
+            <a href="articles/concurrency-series.html">
+                <span class="linkSpanner"></span>
+            </a>
+        </div>
+    </div>
+    -->
+    <div class="container mt-6 mb-6 pt-6">
+        <p class="title is-4">
+            Projects
+        </p>
+        <div class="box project-box">
+            <div class="imgContainer mt-4 mb-4">
+                <img class="sclaledImg" src="assets/chessreps.png">
+            </div>
+            <p class="title is-5">
+                Chess Reps
+            </p>
+            <p class="subtitle is-6">
+                ..is an Android app to help manage and train your chess opening repertoire.
+            </p>
             <a href="https://chessreps.app/">
                 <span class="linkSpanner"></span>
             </a>
-            <div class="imgContainer">
-                <img src="assets/chessreps.png">
-            </div>
-            <div class="container">
-                <h4><b>Chess Reps</b></h4>
-                <p>..is an Android app to help manage and train your chess opening repertoire.</p>
-            </div>
+            <span class="tag is-info">Android</span>
+            <span class="tag is-info">Java</span>
+            <span class="tag is-info">Kotlin</span>
+            <span class="tag is-info">Node.js</span>
+            <span class="tag is-info">Express</span>
         </div>
-        <div class="card">
-            <a href="https://github.com/S4N0I/BirdsView">
-                <span class="linkSpanner"></span>
-            </a>
-            <div class="imgContainer">
-                <img src="assets/birdsview.gif">
+        <div class="box project-box">
+            <div class="imgContainer mt-4 mb-4">
+                <img class="sclaledImg" src="assets/schoolofathens.jpg">
             </div>
-            <div class="container">
-                <h4><b>BirdsView</b></h4>
-                <p>..is a tool to visualize the structure of Java projects.</p>
-            </div>
-        </div>
-        <div class="card">
+            <p class="title is-5">
+                theschoolofathens
+            </p>
+            <p class="subtitle is-6">
+                ..is a graph of philosophers and their influence on each other based on Wikipedia data.
+            </p>
             <a href="https://s4n0i.github.io/schoolofathens/">
                 <span class="linkSpanner"></span>
             </a>
-            <div class="imgContainer">
-                <img src="assets/schoolofathens.jpg">
+            <span class="tag is-info">Python</span>
+            <span class="tag is-info">scrapy</span>
+            <span class="tag is-info">d3.js</span>
+        </div>
+        <div class="box project-box">
+            <div class="imgContainer mt-4 mb-4">
+                <img class="sclaledImg" src="assets/birdsview.gif">
             </div>
-            <div class="container">
-                <h4><b>theschoolofathens</b></h4>
-                <p>..is a graph of philosophers and their influence on each other based on Wikipedia data.</p>
-            </div>
+            <p class="title is-5">
+                BirdsView
+            </p>
+            <p class="subtitle is-6">
+                ..is a tool to visualize the structure of Java projects.
+            </p>
+            <a href="https://github.com/S4N0I/BirdsView">
+                <span class="linkSpanner"></span>
+            </a>
+            <span class="tag is-info">Kotlin</span>
+            <span class="tag is-info">d3.js</span>
         </div>
     </div>
-    
 </body>
+
+</html>
